@@ -1,7 +1,7 @@
 ---
-title: "Presentation title"
-subtitle: "Presentation subtitle (if any)"
-author: "Team name <br> Names of team members"
+title: "Trends, disparities and care pathways"
+subtitle: "An analysis of mental health inpatient."
+author: "Code and Care <br> "
 institute: "University of Edinburgh"
 date: "`r Sys.Date()`"
 output:
@@ -28,9 +28,8 @@ install.packages('xaringan')
 # Add any additional packages you need to this chunk
 library(tidyverse)
 library(tidymodels)
-library(palmerpenguins)
 library(knitr)
-library(xaringanthemer)
+
 ```
 
 ```{r setup, include=FALSE}
@@ -39,7 +38,8 @@ knitr::opts_chunk$set(fig.retina = 3, dpi = 300, fig.width = 6, fig.asp = 0.618,
 ```
 
 ```{r load-data, include=FALSE}
-# Load your data here
+age_sex <-read_csv("mental-health-inpatient-activity-age-sex (1).csv")
+
 
 ```
 
@@ -53,7 +53,8 @@ style_xaringan(
 
 class: center, middle
 
-## A statement of the overall goal / research question
+Our overall research proposition is to determine wether there is a significant difference between the age groups in patient rate and if there is we aim to discover what this difference is. We chose this as our research question as it adresses a real-world healthcare issue. Patient rates often vary across age groups and understanding these patterns is crucial for healthcare planning, resource allocation and designing targeted interventions. This makes the question meaningful and relevant. We chose this question as it clearly defines the variables and its actionable and can lead to real recommendations based on our findings. This question is very relevant to us, as in today world its clear that we face a huge danger of mental health within all ages, something which despertaly needs to be fixed.  
+
 
 ---
 
