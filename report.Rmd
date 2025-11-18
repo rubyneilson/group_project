@@ -19,8 +19,10 @@ library(tidyverse)
 ```
 
 
-```{r load-data, include=FALSE}
-# load your data here and any pre-processing/cleaning 
+```{r load-data, include=TRUE}
+age_sex <-read_csv("mental-health-inpatient-activity-age-sex (1).csv")
+
+head(age_sex)
 #  that you need for your report.
 
 
